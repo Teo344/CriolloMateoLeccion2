@@ -1,30 +1,64 @@
-.detalle {
-  max-width: 600px;
-  margin: 60px auto;
-  padding: 20px;
-  text-align: center;
-  border: 1px solid #ddd;
-  border-radius: 10px;
+.detalle-container {
+  padding: 50px 20px;
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
 }
 
-img {
+.detalle-card {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  max-width: 600px;
   width: 100%;
-  max-width: 300px;
-  border-radius: 5px;
-  margin-bottom: 20px;
+}
+
+.detalle-imagen {
+  width: 100%;
+  height: 320px;
+  object-fit: cover;
+}
+
+.detalle-info {
+  padding: 24px;
+  text-align: center;
+}
+
+.detalle-info h2 {
+  margin-bottom: 12px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.detalle-info p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 16px;
 }
 
 .precio {
-  font-weight: bold;
-  color: #ff6b00;
-  font-size: 1.5rem;
   display: block;
-  margin: 15px 0;
+  font-size: 1.4rem;
+  color: #ff6b00;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-a {
+.btn-volver {
   display: inline-block;
-  margin-top: 20px;
-  color: #007bff;
+  padding: 10px 20px;
+  background-color: #ff6b00;
+  color: #fff;
   text-decoration: none;
+  border-radius: 6px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.btn-volver:hover {
+  background-color: #e05500;
 }

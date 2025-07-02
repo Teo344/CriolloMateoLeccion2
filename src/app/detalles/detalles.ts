@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { ActivatedRoute, RouterModule } from '@angular/router';
-import { productos } from '../productos/data'; // <- signal que ya tienes
+import { productos } from '../productos/data'; 
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -12,7 +12,7 @@ import { CommonModule } from '@angular/common';
 
 
 export class Detalles {
-  producto = productos().find(p => p.id === 0); // valor inicial
+  producto = productos().find(p => p.id === 0); 
 
   constructor(private route: ActivatedRoute) {
     const id = Number(this.route.snapshot.paramMap.get('id'));

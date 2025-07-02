@@ -3,11 +3,18 @@
   max-width: 600px;
   margin: auto;
   text-align: center;
+  background-color: var(--naranja-S);
+}
+
+*{
+    margin: 0;
+    padding: 0;
 }
 
 .contacto h2 {
   margin-bottom: 30px;
   font-size: 2rem;
+  font-family: var(--font-title);
 }
 
 .formulario {
