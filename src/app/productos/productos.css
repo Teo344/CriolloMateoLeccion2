@@ -70,7 +70,7 @@ h2{
 
 .btn-detalle {
   padding: 10px;
-  background-color: #ff6b00;
+  background-color: var(--azul);
   color: white;
   border-radius: 5px;
   text-decoration: none;
