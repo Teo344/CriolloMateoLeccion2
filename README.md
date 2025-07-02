@@ -1,59 +1,53 @@
 # CriolloMateoLeccion2
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.0.1.
+Una aplicación web desarrollada en Angular 20+ que simula una tienda online con productos destacados, vista detallada por producto y un formulario de contacto. Utiliza Signals, componentes standalone y enrutamiento dinámico.
 
-## Development server
 
-To start a local development server, run:
+Tecnologías Usadas
+Angular 20+
 
-```bash
-ng serve
-```
+Standalone Components
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Angular Signals
 
-## Code scaffolding
+Routing Dinámico
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+HTML5 + CSS3
 
-```bash
-ng generate component component-name
-```
+Bootstrap (opcional)
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+TypeScript
 
-```bash
-ng generate --help
-```
 
-## Building
+✅ Página de inicio con productos destacados
 
-To build the project run:
+✅ Listado de productos cargados con signals
 
-```bash
-ng build
-```
+✅ Detalles de producto dinámicos (/productos/:id)
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+✅ Formulario de contacto
 
-## Running unit tests
+✅ Enrutamiento SPA con routerLink y router-outlet
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+✅ Estilo responsive y limpio
 
-```bash
-ng test
-```
 
-## Running end-to-end tests
+Los productos están definidos como una señal (signal) en productos/data.ts, lo que permite reactividad sin necesidad de servicios ni RxJS. Se accede con productos() directamente desde los templates.
 
-For end-to-end (e2e) testing, run:
+productos/data.ts – Signal con lista de productos
 
-```bash
-ng e2e
-```
+productos.ts – Componente standalone para mostrar todos los productos
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+detalles.ts – Componente que obtiene el producto por id desde la ruta
 
-## Additional Resources
+contactos.ts – Formulario de contacto con validación
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+app.routes.ts – Configuración de rutas
+
+Puedes modificar contactos.ts para conectar el formulario a un backend real o servicio de correo.
+
+
+
+
+
+
