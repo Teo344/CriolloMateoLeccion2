@@ -1,0 +1,30 @@
+.detalle {
+  max-width: 600px;
+  margin: 60px auto;
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.precio {
+  font-weight: bold;
+  color: #ff6b00;
+  font-size: 1.5rem;
+  display: block;
+  margin: 15px 0;
+}
+
+a {
+  display: inline-block;
+  margin-top: 20px;
+  color: #007bff;
+  text-decoration: none;
+}

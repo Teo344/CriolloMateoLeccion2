@@ -1,0 +1,21 @@
+<section class="hero">
+  <div class="hero-content">
+    <h1>Bienvenido a Nuestra Tienda</h1>
+    <p>Explora los mejores productos al mejor precio</p>
+    <button type="button"  (click)="irA('/productos')" >Productos</button>
+  </div>
+</section>
+
+<section class="destacados">
+  <h2>Productos Destacados</h2>
+  <div class="productos-grid">
+    <div class="producto-card" *ngFor="let p of productosDestacados()">
+      <img [src]="p.imagen" [alt]="p.nombre" />
+      <h3>{{ p.nombre }}</h3>
+      <p>{{ p.descripcion }}</p>
+      <span class="precio">${{ p.precio }}</span>
+      <button class="but" type="button" [routerLink]="['/productos', p.id]">Ver detalle</button>
+    </div>
+  </div>
+</section>
+

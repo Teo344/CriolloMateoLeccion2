@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+  --azul: #00809D;
+  --blanco: #FCECDD;
+  --naranja-F: #FF7601;
+  --naranja-S: #F3A26D;
+  --negro: #0D0D0D;
+
+  --font-title: 'Passion One', cursive;
+  --font-subtitle: 'Montserrat', sans-serif;
+  --font-body: 'Abel', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,102 @@
+.hero {
+  color: var(--naranja-S);
+  font-family: var(--font-title);
+  text-align: center;
+  padding: 100px 20px;
+  background-image: url("/Fondo.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+    color: var(--blanco);
+}
+
+.hero-content p {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  font-family: var(--font-subtitle);
+}
+
+.hero-content button {
+  padding: 10px 25px;
+  background-color: var(--naranja-S);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.but{
+    padding: 10px 25px;
+  background-color: var(--azul);
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.destacados {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: var(--azul);
+}
+
+.destacados h2 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  color: var(--blanco);
+  font-family : var(--font-subtitle);
+
+}
+
+.productos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+
+.producto-card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  background-color: var(--naranja-S);
+  transition: transform 0.3s;
+  width: 400px;
+  margin-left: 100px;
+}
+
+.producto-card:hover {
+  transform: scale(1.05);
+}
+
+.producto-card img {
+  border-radius: 5px;
+  max-width: 200px;
+}
+
+.producto-card h3 {
+  margin: 10px 0 5px;
+  font-size: 1.7rem;
+  font-family: var(--font-subtitle);
+}
+
+.producto-card p {
+  font-size: 1.5rem;
+  color: var(--blanco);
+  font-family: var(--font-body);
+}
+
+.precio {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: var(--azul);
+  font-family: var(--font-subtitle);
+  font-size: 20px;
+}

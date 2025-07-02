@@ -1,0 +1,5 @@
+<img [src]="producto?.imagen" [alt]="producto?.nombre" />
+<h2>{{ producto?.nombre }}</h2>
+<p>{{ producto?.descripcion }}</p>
+<span class="precio">${{ producto?.precio }}</span>
+<a routerLink="/productos">← Volver a productos</a>
